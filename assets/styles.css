@@ -14,6 +14,9 @@ body {
     width: calc(100vw - 50px);
     height: 100vh;
     padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
 
 label.title {
@@ -42,22 +45,23 @@ label.title {
 }
 
 .wrapper {
-    margin-top: 20px
-    margin-bottom: 20px
-    ;
+    margin-top: 20px;
 }
 
 #indicator {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .big-title {
     font-weight: bold;
     font-size: 18px;
     line-height: 35px;
+}
 
-    ;
+#time-period {
+    padding-bottom: 50px!important;
 }
 
 .has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
@@ -82,4 +86,17 @@ label.title {
     color: var(--light);
     transform: rotate(90deg)!important;
     transform-origin: left;
+}
+
+.data-source {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: flex-end;
+    padding-bottom: 25px;
+}
+
+.data-source a {
+    color: #adb2bd;
+    margin-left: 5px;
 }
